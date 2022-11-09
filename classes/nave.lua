@@ -2,7 +2,7 @@ Nave = Classe:extend()
 
 function Nave:new()
     self.skin = love.graphics.newImage("recursos/imagens/nave_skin.png")
-    self.pos_x = 300
+    self.pos_x = 350
     self.pos_y = 300
     self.largura = self.skin:getWidth()
     self.altura = self.skin:getHeight()

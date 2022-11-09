@@ -8,9 +8,13 @@ function TelaInicial:new()
         sair = 375
     }
     self.opcao = "jogar"
+    self.timer = 0
 end
 
-function TelaInicial:update()
+function TelaInicial:update(dt)
+    while self.timer < 0.5 do
+        self.timer = self.timer + dt
+    end
     self:selecionar()
     if love.keyboard.isDown("return") then
         if self.opcao == "jogar" then

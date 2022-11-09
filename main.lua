@@ -12,7 +12,7 @@ function love.load()
     telaInicial = TelaInicial()
     cenas = {
         jogo = jogo,
-        telaInicial = telaInicial
+        telaInicial = telaInicial,
     }
     cena_atual = "telaInicial"
 end

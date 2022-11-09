@@ -37,7 +37,10 @@ function Jogo:update(dt)
         end
     end
     if nave.vidas == 0 then
-        os.exit()
+        cena_atual = "telaInicial"
+        nave = Nave()
+        meteoros = {}
+        pontos = 0
     end
 end
 
