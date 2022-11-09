@@ -8,6 +8,7 @@ function Nave:new()
     self.altura = self.skin:getHeight()
     self.vel = 250
     self.ataques = {}
+    self.max_ataques = 15
     self.vidas = 3
     self.vida_skin = love.graphics.newImage("recursos/imagens/life.png")
 end
@@ -66,7 +67,7 @@ end
 
 function Nave:atirar(dt)
     if love.keyboard.isDown("space") then
-        if #self.ataques <= 10 then
+        if #self.ataques <= self.max_ataques then
             tiro = Tiro(self.pos_x + self.largura / 2, self.pos_y)
             table.insert(self.ataques, tiro) 
         end

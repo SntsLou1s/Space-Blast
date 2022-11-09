@@ -6,7 +6,7 @@ function Meteoro:new()
     self.altura = self.skin:getHeight()
     self.pos_x = love.math.random(0, largura_tela - self.largura)
     self.pos_y = -self.altura
-    self.vel = 70
+    self.vel = 55
 end
 
 function Meteoro:update(dt)

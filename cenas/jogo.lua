@@ -42,6 +42,7 @@ function Jogo:update(dt)
 end
 
 function Jogo:draw()
+    love.window.setTitle("Space Blast")
     nave:draw()
     for i, meteoro in pairs(meteoros) do
         meteoro:draw()
